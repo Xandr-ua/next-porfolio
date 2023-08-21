@@ -31,26 +31,49 @@ const workSlider = {
         },
       ],
     },
-    // {
-    //   images: [
-    //     {
-    //       title: 'title',
-    //       path: '/thumb4.jpg',
-    //     },
-    //     {
-    //       title: 'title',
-    //       path: '/thumb1.jpg',
-    //     },
-    //     {
-    //       title: 'title',
-    //       path: '/thumb2.jpg',
-    //     },
-    //     {
-    //       title: 'title',
-    //       path: '/thumb3.jpg',
-    //     },
-    //   ],
-    // },
+    {
+      images: [
+        {
+          title: 'title',
+          path: '/thumb-5.jpg',
+          link: 'https://digitalmedia.babyuk.site/',
+        },
+        {
+          title: 'title',
+          path: '/thumb-6.jpg',
+          link: 'https://cleaning.babyuk.site/',
+        },
+        {
+          title: 'title',
+          path: '/thumb-7.jpg',
+          link: 'https://dentelo-master.babyuk.site/',
+        },
+        {
+          title: 'title',
+          path: '/thumb-8.jpg',
+          link: 'https://next.babyuk.site/',
+        },
+      ],
+    },
+    {
+      images: [
+        {
+          title: 'title',
+          path: '/thumb-9.jpg',
+          link: 'https://oculus.babyuk.site/',
+        },
+        {
+          title: 'title',
+          path: '/thumb-10.jpg',
+          link: 'https://avivi-test.babyuk.site/',
+        },
+        {
+          title: 'title',
+          path: '/thumb-11.jpg',
+          link: 'https://travel.babyuk.site/',
+        },
+      ],
+    },
   ],
 };
 
@@ -86,6 +109,7 @@ const WorkSlider = () => {
                   <Link
                     key={index}
                     href={`${image.link}`}
+                    target="_blank"
                     className="relative rounded-lg overflow-hidden flex items-center justify-center group">
                     <div
                       className="flex items-center justify-center relative overflow-hidden group"
