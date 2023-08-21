@@ -12,7 +12,6 @@ const aboutData = [
     info: [
       {
         title: 'Web Development',
-        // icons: [<FaHtml5 />, <FaCss3 />, <FaJs />, <FaReact />, <SiNextdotjs />, <FaWordpress />],
       },
     ],
   },
@@ -152,28 +151,39 @@ const About = () => {
             })}
           </div>
           <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
-            {aboutData[index].info.map((item, itemIndex) => {
-              return (
-                <div
-                  key={itemIndex}
-                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60">
-                  {/* title */}
-                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                  <div className="hiden md:flex">-</div>
-                  <div>{item.stage}</div>
+            {aboutData[index].info.map((item, itemIndex) => (
+              <div
+                key={itemIndex}
+                className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60">
+                {/* title */}
+                <div className="font-light mb-2 md:mb-0">{item.title}</div>
+                <div className="hiden md:flex">-</div>
+                <div>{item.stage}</div>
+                {index === 0 && item.title === 'Web Development' && (
                   <div className="flex gap-x-4">
-                    {/* icons */}
-                    <div className="text-2xl text-white flex gap-x-2">
-                      <div>{<FaHtml5 />}</div>
-                      <div>{<FaCss3 />}</div>
-                      <div>{<FaJs />}</div>
-                      <div>{<SiNextdotjs />}</div>
-                      <div>{<FaWordpress />}</div>
+                    {/* Icons */}
+                    <div className="text-2xl text-white">
+                      <FaHtml5 />
+                    </div>
+                    <div className="text-2xl text-white">
+                      <FaCss3 />
+                    </div>
+                    <div className="text-2xl text-white">
+                      <FaJs />
+                    </div>
+                    <div className="text-2xl text-white">
+                      <FaReact />
+                    </div>
+                    <div className="text-2xl text-white">
+                      <SiNextdotjs />
+                    </div>
+                    <div className="text-2xl text-white">
+                      <FaWordpress />
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                )}
+              </div>
+            ))}
           </div>
         </motion.div>
       </div>
